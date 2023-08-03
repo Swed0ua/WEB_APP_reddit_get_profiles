@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>REDDIT</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__title">settings</div>
+            <div class="btn btn__cancel header__cancel">cancel</div>
+        </div>
+        <div class="setts__area">
+            <div class="input__item">
+                <label for="link__input">subreddit</label>
+                <input type="text" id="link__input" name="link__input" placeholder="enter subreddit name">
+            </div>
+            <div class="input__item">
+                <label for="stop_words">stop words</label>
+                <input type="text" placeholder="',' for word separator" id="stop_words" name="stop_words">
+            </div>
+            <div class="input__item">
+                <label for="max_posts">Max posts</label>
+                <input type="number" id="max_posts" name="max_posts" value="999" min="0">
+            </div>
+        </div>
+        <div class="btns__area">
+            <div class="btn btn__save">save</div>
+            <div class="btn btn__cancel">cancel</div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
